@@ -1,0 +1,198 @@
+
+/* Añadir al principio del archivo */
+* {
+    box-sizing: border-box;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 1.5rem 1rem;
+    }
+
+        header h1 {
+            font-size: 1.8rem;
+        }
+
+        header p {
+            font-size: 1rem;
+        }
+
+    nav {
+        padding: 0.5rem;
+    }
+
+        nav ul {
+            flex-direction: column;
+            gap: 0.5rem;
+            width: 100%;
+        }
+
+            nav ul li a {
+                display: block;
+                padding: 0.5rem;
+                text-align: center;
+            }
+
+    section {
+        padding: 1.5rem 1rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    /* Mejorar el formulario para móviles */
+    form input[type="text"],
+    form textarea {
+        width: 100%;
+    }
+
+    /* Reducir el tamaño del botón de WhatsApp */
+    .whatsapp-float {
+        padding: 12px;
+        font-size: 20px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+/* Media query para pantallas muy pequeñas (ej. 320px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 13px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 1rem 0.5rem;
+    }
+
+    .whatsapp-float {
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+
+/* Mantener el resto del CSS existente... */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #1f2937;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+    header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #374151;
+    padding: 1rem;
+}
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+        padding: 0;
+        margin: 0;
+    }
+
+        nav ul li {
+            display: inline;
+        }
+
+            nav ul li a {
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                padding: 0.75rem 1rem;
+                transition: background 0.3s ease;
+                border-radius: 0.5rem;
+            }
+
+                nav ul li a:hover {
+                    background: #3b82f6;
+                }
+
+section {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+a.button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #3b82f6;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+}
+
+    a.button:hover {
+        background-color: #2563eb;
+    }
+
+footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
